@@ -7,8 +7,14 @@ WORKDIR /app
 # Copy the application files into the working directory
 COPY . /app
 
+EXPOSE 80/tcp
+EXPOSE 80/udp
+EXPOSE 443/tcp
+EXPOSE 8081/udp
+
 # Install the application dependencies
 RUN npm install
 
 # Define the entry point for the container
 CMD ["npm", "start"]
+
