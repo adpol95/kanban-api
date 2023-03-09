@@ -1,7 +1,7 @@
 const cardCreate = require("../user/cardCreate");
-const cardDelete = require("../../../card/cardDelete");
+const cardDelete = require("../user/cardDelete");
 const cardGetAll = require("../user/cardGetAll");
-const cardUpdateById = require("../../../card/cardUpdateById");
+const cardUpdateById = require("../user/cardUpdateById");
 
 function routes(app) {
   app.get('/', (req, res) => {
