@@ -1,7 +1,7 @@
 const express = require('express');
-const {routes} = require('./core/routes');
-const bodyParser1 = require("./core/bodyParser");
-const dbConnection = require("./core/dbConnection");
+const {routes} = require('./modules/core/routes');
+const bodyParser1 = require("./modules/core/bodyParser");
+const dbConnection = require("./modules/core/dbConnection");
 const app = express();
 
 const PORT = 5000;
