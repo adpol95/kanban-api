@@ -6,7 +6,7 @@ module.exports = function(app) {
       'Origin, X-Requested-With, Content-Type, Accept, Authorization',
     );
     if (req.method === 'OPTION') {
-      res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, GET');
+      res.header('Access-Control-Allow-Methods', 'PATCH, POST, DELETE, GET');
       return res.status(200).json({});
     }
     next();
