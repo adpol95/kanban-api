@@ -1,8 +1,10 @@
 const User = require('./Model');
 function cardCreate(req, res) {
     const userN = new User({
-        name: req.body.name,
-        email: req.body.email
+      login: req.body.login,
+      password: req.body.password,
+      list: req.body.list,
+      status: req.body.status
     });
 
     userN
