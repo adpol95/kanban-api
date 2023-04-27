@@ -9,7 +9,10 @@ function cardCreate(req, res) {
 
     userN
       .save()
-      .then(() => res.status(200).json('Card created'))
+      .then(() => {
+        res.status(200).json('Card created')
+        console.log(res);
+      })
       .catch((err) => {
           console.log(err);
           res.status(400).json('Error')

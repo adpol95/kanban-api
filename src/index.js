@@ -3,6 +3,7 @@ const {routes} = require('./modules/core/routes');
 const bodyParser1 = require("./modules/core/bodyParser");
 const dbConnection = require("./modules/core/dbConnection");
 const cors = require("./modules/core/cors");
+
 const app = express();
 
 const PORT = 5000;
