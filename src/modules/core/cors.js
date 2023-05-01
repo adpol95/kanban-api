@@ -14,7 +14,7 @@ module.exports = function(app) {
   // });
 
   app.use(cors({
-    origin: "https://todolistv2-adpol95.b4a.run/card",
+    origin: "https://todolistv2-adpol95.b4a.run",
     allowedHeaders: ['Origin, X-Requested-With, Content-Type'],
     methods: ["GET", "POST", "PATCH", "DELETE"]
   }))
