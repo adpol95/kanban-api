@@ -14,7 +14,7 @@ module.exports = function(app) {
   // });
 
   app.use(cors({
-    origin: "https://master--to-do-with-back-and-auth.netlify.app",
+    origin: "https://to-do-with-back-and-auth.netlify.app",
     allowedHeaders: ['Origin, X-Requested-With, Content-Type'],
     methods: ["GET", "POST", "PATCH", "DELETE"]
   }))
